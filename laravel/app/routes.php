@@ -14,9 +14,14 @@
 //Route::get('/', 'HomeController@showWelcome');
 
 
-Route::get('/', function()
+/*Route::get('/', function()
 {
     return View::make('hello');
+});*/
+
+Route::get('/', function()
+{
+    return 'Hello world one';
 });
 
 Route::resource('welcome', 'WelcomeController');
