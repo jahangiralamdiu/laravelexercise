@@ -12,7 +12,7 @@ class WelcomeTest extends TestCase {
     {
         $response = $this->action('GET', 'WelcomeController@index');
 
-        $this->assertEquals('Hello World', $response->getContent());
+        $this->assertEquals('I am Jahangir', $response->getContent());
     }
 
 }

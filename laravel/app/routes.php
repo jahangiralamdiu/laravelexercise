@@ -24,7 +24,18 @@ Route::get('/', function()
     return 'Hello world one';
 });
 
+Route::get('welcometest', function()
+{
+    return 'Hello world one';
+});
+
 Route::get('welcome/sayhello', 'WelcomeController@sayHello'
 );
 
-Route::resource('welcome', 'WelcomeController');
+Route::get('welcomejahangir', 'WelcomeController@index'
+);
+
+Route::get('hellojahangir', function()
+{
+    return View::make('hellojahangir');
+});

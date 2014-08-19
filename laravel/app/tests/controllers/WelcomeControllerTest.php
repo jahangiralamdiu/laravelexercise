@@ -12,4 +12,10 @@ class WelcomeControllerTest extends TestCase {
         $this->call('GET', 'welcome/sayhello');
         $this->assertResponseOk();
     }
+
+    public function testhellojahangirContent()
+    {
+        $response = $this->call('GET', 'hellojahangir');
+        $this->assertEquals('Hello World', $response->getContent());
+    }
 }
