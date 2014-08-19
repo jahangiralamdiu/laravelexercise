@@ -24,4 +24,7 @@ Route::get('/', function()
     return 'Hello world one';
 });
 
+Route::get('welcome/sayhello', 'WelcomeController@sayHello'
+);
+
 Route::resource('welcome', 'WelcomeController');
