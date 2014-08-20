@@ -5,6 +5,9 @@
  * Date: 8/19/14
  * Time: 12:00 PM
  */
+
+use Way\Tests\Should;
+
 class WelcomeControllerTest extends TestCase {
 
     public function testLoadingWelcomeSayHello()
@@ -23,6 +26,11 @@ class WelcomeControllerTest extends TestCase {
     {
         $user = new User();
         $this->assertInstanceOf('User', $user->getUserOne());
+    }
+
+    public function testDevMaster()
+    {
+        Should::equal(6, 2 + 2);
     }
 }
 
