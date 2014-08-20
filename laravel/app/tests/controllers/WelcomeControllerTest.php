@@ -7,6 +7,7 @@
  */
 
 use Way\Tests\Should;
+use WelcomeController;
 
 class WelcomeControllerTest extends TestCase {
 
@@ -30,7 +31,7 @@ class WelcomeControllerTest extends TestCase {
 
     public function testDevMaster()
     {
-        Should::equal(6, 2 + 2);
+        Should::equal(4, 2 + 2);
     }
 }
 
