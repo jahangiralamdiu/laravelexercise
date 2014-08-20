@@ -4,7 +4,20 @@ class WelcomeController extends \BaseController {
 
     public function sayhello()
     {
-        return View::make('jahangir');
+        $data = array(
+            'heading' => 'Hello Everyone',
+            'body' => 'I am an FTFLEAN'
+        );
+        return View::make('jahangir', $data);
+    }
+
+    public function sayhi()
+    {
+        $data = array(
+            'heading' => 'Hello Everyone',
+            'body' => 'I am an FTFLEAN'
+        );
+        return View::make('student/sayhi', $data);
     }
 
     public function index()

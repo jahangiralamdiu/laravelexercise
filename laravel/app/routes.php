@@ -29,8 +29,7 @@ Route::get('welcometest', function()
     return 'Hello world one';
 });
 
-Route::get('welcome/sayhello', 'WelcomeController@sayHello'
-);
+Route::get('welcome', 'WelcomeController@sayhello');
 
 Route::get('welcomejahangir', 'WelcomeController@index'
 );
@@ -39,3 +38,5 @@ Route::get('hellojahangir', function()
 {
     return View::make('hellojahangir');
 });
+
+Route::get('student/sayhi', 'WelcomeController@sayhi');
