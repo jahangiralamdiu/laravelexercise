@@ -18,4 +18,31 @@ class WelcomeControllerTest extends TestCase {
         $response = $this->call('GET', 'hellojahangir');
         $this->assertEquals('Hello World', $response->getContent());
     }
+
+    public function testInstanceOf()
+    {
+        $user = new User();
+        $this->assertInstanceOf('User', $user->getUserOne());
+    }
+}
+
+class User {
+
+    public $userOne;
+
+    public function __construct()
+    {
+
+        $this->userOne = $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserOne()
+    {
+        return $this->userOne;
+    }
+
+
 }
