@@ -2,7 +2,7 @@
 
 @section("contenttwo")
 
-<h1>{{ $heading }}</h1>
-<p>{{ $body }}</p>
+<h1>{{{ $heading }}}</h1>
+<p>{{{ $body }}}</p>
 
 @stop
